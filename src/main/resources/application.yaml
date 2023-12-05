@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: xx
+    username: xx
+    password: xx
+  jpa:
+    properties:
+      hibernate:
+        diarect: org.hibernate.dialect.MySQL5InnoDBDialect
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+
+jwt:
+  secret: xx
+
+
+cloud:
+  aws:
+    s3:
+      bucket: suoh-camping
+    credentials:
+      access-key: xx
+      secret-key: xx
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
